@@ -88,7 +88,7 @@ class GenAIObjectConfig(FrigateBaseModel):
         description="Use object snapshots instead of thumbnails for GenAI description generation.",
     )
     prompt: str = Field(
-        default="Analyze the sequence of images containing the {label}. Focus on the likely intent or behavior of the {label} based on its actions and movement, rather than describing its appearance or the surroundings. Consider what the {label} is doing, why, and what it might do next.",
+        default="Analyse la séquence d'images contenant le {label}. Concentre-toi sur l'intention probable ou le comportement du {label} en fonction de ses actions et de ses mouvements, plutôt que de décrire son apparence ou l’environnement. Réfléchis à ce que le {label} fait, pourquoi, et ce qu'il pourrait faire ensuite",
         title="Caption prompt",
         description="Default prompt template used when generating descriptions with GenAI.",
     )
